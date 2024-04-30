@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EmpleadoController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\ProveedorController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/inicio', function () {
@@ -14,4 +15,8 @@ Route::post('/inicio/empleados/guardar', [EmpleadoController::class, 'guardarNue
 
 Route::get('/inicio/productos', [ProductoController::class, 'verProductos'])->name('verProductos');
 Route::get('/inicio/productos/crear', [ProductoController::class, 'formCrearProducto'])->name('formCrearProducto');
+Route::post('/inicio/productos/guardar', [ProductoController::class, 'guardarNuevoProducto'])->name('guardarNuevoProducto');
 
+Route::get('/inicio/proveedores', [ProveedorController::class, 'verProveedores'])->name('verProveedores');
+Route::get('/inicio/proveedores/crear', [ProveedorController::class, 'formCrearProveedor'])->name('formCrearProveedor');
+Route::post('/inicio/proveedores/guardar', [ProveedorController::class, 'guardarNuevoProveedor'])->name('guardarNuevoProveedor');

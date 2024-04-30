@@ -17,11 +17,13 @@
             <input type="text" name="precioProducto"> <br>
             <label for="stockProducto">Stock</label>
             <input type="text" name="stockProducto"> <br>
-            <label for="salario">Salario</label>
-            <input type="text" name="salarioEmpleado"> <br>
+            <label for="pagaIsv">Paga I.S.V</label>
+            <input type="radio" name="pagaIsv" value="true">Si <br>
+            <input type="radio" name="pagaIsv"value="false" >No <br>
             <button type="submit">Guardar</button>
         </form>
         <div><a href=""><button>Volver</button></a></div>
     </div>
 </body>
 </html>
+

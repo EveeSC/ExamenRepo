@@ -15,4 +15,15 @@ class ProductoController extends Controller
     public function formCrearProducto(){
         return view('crearProductos');
     }
+
+    public function guardarNuevoProducto(Request $request){
+        $nvoProducto = new Producto;
+        $nvoProducto->descripcion = $request->input('descripcionProducto');
+        $nvoProducto->precio = $request->input('precioProducto');
+        $nvoProducto->stock = $request->input('stockProducto');
+        $nvoProducto->pagaIsv= $request->input('pagaIsv');
+        $nvoProducto->save();
+
+        return redirect('/inicio/productos');
+    }
 }

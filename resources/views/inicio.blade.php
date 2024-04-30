@@ -10,6 +10,6 @@
     <div><h1>Vista Principal</h1></div>
     <div><a href="{{route('verEmpleados')}}"><button>Ver Empleados</button></a></div>
     <div><a href="{{route('verProductos')}}"><button>Ver Productos</button></a></div>
-    <div><a href=""><button>Ver Proveedores</button></a></div>
+    <div><a href="{{route('verProveedores')}}"><button>Ver Proveedores</button></a></div>
 </body>
 </html>
