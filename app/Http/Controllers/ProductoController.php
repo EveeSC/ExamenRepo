@@ -23,7 +23,6 @@ class ProductoController extends Controller
         $nvoProducto->stock = $request->input('stockProducto');
         $nvoProducto->pagaIsv= $request->input('pagaIsv');
         $nvoProducto->save();
-
         return redirect('/inicio/productos');
     }
 }
